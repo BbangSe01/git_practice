@@ -1,0 +1,136 @@
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+#body {
+    background-image: url("./image/coffee.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "americano americano americano"
+        "caffelatte caffelatte caffelatte"
+        "caffemocha caffemocha caffemocha";
+    row-gap: 200px;
+    column-gap: 20px;
+}
+
+#americano {
+    grid-area: americano;
+}
+
+#caffelatte {
+    grid-area: caffelatte;
+}
+
+#caffemocha {
+    grid-area: caffemocha;
+}
+
+.flex-container-a {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-container-cl {
+    display: flex;
+}
+
+.flex-container-cm {
+    display: flex;
+}
+
+.flex-container-cl>img {
+    width: 400px;
+    border-radius: 5px;
+    margin-right: 70px;
+}
+
+.flex-container-a>img {
+    width: 400px;
+    border-radius: 5px;
+    margin-right: 70px;
+
+}
+
+.flex-container-cm>img {
+    width: 400px;
+    border-radius: 5px;
+    margin-right: 70px;
+
+}
+
+#latte-explanation {
+    color: rgb(45, 20, 20);
+    font-weight: bold;
+    width: 1500px;
+    text-align: left;
+    font-size: 20px;
+    border-width: 5px;
+    border-color: rgb(24, 22, 22);
+    padding-top: 25px;
+    opacity: 0;
+}
+
+#ame-explanation {
+    color: rgb(22, 1, 1);
+    font-weight: bold;
+    width: 1500px;
+    text-align: left;
+    font-size: 20px;
+    border-width: 5px;
+    border-color: rgb(255, 255, 255);
+    padding-top: 40px;
+    opacity: 0;
+}
+
+#americano:hover #ame-explanation {
+    opacity: 1;
+}
+
+#caffelatte:hover #latte-explanation {
+    opacity: 1;
+}
+
+#caffemocha:hover #mocha-explanation {
+    opacity: 1;
+}
+
+
+
+#mocha-explanation {
+    color: rgb(18, 1, 1);
+    font-weight: bold;
+    width: 1500px;
+    text-align: left;
+    font-size: 20px;
+    border-width: 5px;
+    border-color: rgb(255, 252, 252);
+    padding-top: 40px;
+    opacity: 0;
+}
+
+
+.flex-nav {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 140px;
+    background-color: rgb(22, 21, 18);
+    padding: 20px;
+}
+
+a {
+    color: white;
+}
+
+a:hover::after {
+    content: " ☕";
+
+}

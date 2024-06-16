@@ -1,0 +1,31 @@
+<!-- 방세현 60201940 기초웹프로그래밍 과제4 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Guessing Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="game">
+        <h1>Word Guessing Game</h1>
+        <div id="scoreBoard">
+            <span>Score: <span id="score">0</span>/5</span>
+        </div>
+        <p id="wordMeaning">Meaning: A feeling of great pleasure and happiness.</p>
+        <p id="wordDisplay">_ _ _ _ _</p>
+        <input type="text" id="letterInput" placeholder="Enter your guess" maxlength="1">
+        <button id="actionButton" onclick="guessLetter()">Submit Guess</button>
+        <p id="message"></p>
+    </div>
+    <footer>
+        <p>#방세현 60201940 기초웹프로그래밍 과제4</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
